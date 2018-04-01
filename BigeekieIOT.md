@@ -55,8 +55,6 @@
   - [Activar relé en base a alarmas de Kapacitor](Flows/Flow11.md)
   - [Enviar notificación del cambio a Telegram](Flows/Flow12.md)
 
-![FlowsEvol/Node-RED12.png](FlowsEvol/Node-RED12.png)
-
 
 - Ejemplo gráficos Chronograf:
   - Gráfico de líneas:
