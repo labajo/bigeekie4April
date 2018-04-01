@@ -26,7 +26,7 @@
 - Comenzar converasción con Botfather.
 - Introducir comando ```/newbot```.
 - Introducir un prettyName. ```bigeekieIot```
-- Introducir un username acabado en ```-bot```. ```bigeekieIot_bot```
+- Introducir un username acabado en ```_bot```. ```bigeekieIot_bot```
 
 ## Instalación Mosquitto:
 - brew install mosquitto
