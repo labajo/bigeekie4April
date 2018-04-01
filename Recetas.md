@@ -68,3 +68,7 @@
 
 ## Ayuda botón AWS IoT:
 https://docs.aws.amazon.com/iot/latest/developerguide/configure-iot.html
+
+## Capturar tráfico con Wireshark para detectar el click del botón
+Capturar sobre interfaz de bridge100 y con filter packet arp
+
