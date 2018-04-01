@@ -42,29 +42,19 @@
 
 - Flows
 
-  - ​Escuchar MQTT:
-![FlowsEvol/Node-RED1.png](FlowsEvol/Node-RED1.png)
-  - Generar Dashboard:
-![FlowsEvol/Node-RED2.png](FlowsEvol/Node-RED2.png)
-  - Poner un botón en el dashboard:
-![FlowsEvol/Node-RED3.png](FlowsEvol/Node-RED3.png)
-  - Capturar medidas de los sensores y guardarlas en InfluxDb:
-![FlowsEvol/Node-RED4.png](FlowsEvol/Node-RED4.png)
-  - Averiguar el chatId de tu conversación con el bot de telegram:
-![FlowsEvol/Node-RED6.png](FlowsEvol/Node-RED6.png)
-  - Configuración del bot de telegram:
-![FlowsEvol/Node-RED7.png](FlowsEvol/Node-RED7.png)
-  - Preguntar al bot por las últimas medidas:
-![FlowsEvol/Node-RED8.png](FlowsEvol/Node-RED8.png)
-  - Enlazar el botón del dashboard con el bot:
-![FlowsEvol/Node-RED9.png](FlowsEvol/Node-RED9.png)
-  - Añadir botón de AWS IoT:
-![FlowsEvol/Node-RED10.png](FlowsEvol/Node-RED10.png)
-  - Activar y desactivar la TupperLamp:
-![FlowsEvol/Node-RED11.png](FlowsEvol/Node-RED11.png)
-  - Activar relé en base a alarmas de Kapacitor:
-![FlowsEvol/Node-RED12.png](FlowsEvol/Node-RED12.png)
-  - Enviar notificación del cambio a Telegram:
+  - [Escuchar MQTT](Flows/Flow1.md)
+  - [Generar Dashboard](Flows/Flow2.md)
+  - [Poner un botón en el dashboard](Flows/Flow3.md)
+  - [Capturar medidas de los sensores y guardarlas en InfluxDb](Flows/Flow4.md)
+  - [Averiguar el chatId de tu conversación con el bot de telegram](Flows/Flow5.md)
+  - [Configuración del bot de telegram](Flows/Flow6.md)
+  - [Preguntar al bot por las últimas medidas](Flows/Flow7.md)
+  - [Enlazar el botón del dashboard con el bot](Flows/Flow8.md)
+  - [Añadir botón de AWS IoT](Flows/Flow9.md)
+  - [Activar y desactivar la TupperLamp](Flows/Flow10.md)
+  - [Activar relé en base a alarmas de Kapacitor](Flows/Flow11.md)
+  - [Enviar notificación del cambio a Telegram](Flows/Flow12.md)
+
 ![FlowsEvol/Node-RED12.png](FlowsEvol/Node-RED12.png)
 
 
@@ -78,17 +68,17 @@
 - Ejemplo alertas Kapacitor:
   - Temp alert:
     - Threshold
-    - Seleccionar base de datos y medida
+    - Seleccionar base de datos y medida, 0 functions
     - temp, less than 16
     - add handler: Telegram con bot token y chatId
     - Message: {{ if eq .Level "OK" }}Problema de temperatura arreglado 😀.{{ else }}La temperatura ha bajado de 16ºC 💩.{{ end }} Valor actual:  {{ index .Fields "value" }} ºC, fecha:  {{.Time}}
 
   - Relay alert:
     - Threshold
-    - Seleccionar base de datos y medida
+    - Seleccionar base de datos y medida, 0 functions
     - temp, less than 16
     - add handler: http://localhost:1880/api/relay
-    - Message: {{ if eq .Level "OK" }}OFF{{ else }}ON{{ end }}
+    - Message: {{ if eq .Level "OK" }}0{{ else }}1{{ end }}
 
 
 ## Recetas:

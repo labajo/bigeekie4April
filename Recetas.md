@@ -8,6 +8,7 @@
 - AWS IOT Button: {{aws_mac}}
 - Topics:
   - sensors/wemos_1
+  - sensors/wemos_2
   - sensors/esp8266_1
   - sensors/esp32_1
 - MQTT QoS: 0 (https://www.hivemq.com/blog/mqtt-essentials-part-6-mqtt-quality-of-service-levels)
