@@ -14,9 +14,9 @@
 - MQTT QoS: 0 (https://www.hivemq.com/blog/mqtt-essentials-part-6-mqtt-quality-of-service-levels)
 
 ## Nodes instalados en Node Red
-- node-red-contrib-influxdb
 - node-red-contrib-md5
 - node-red-contrib-pcap (error en la librería, instalar pcap2 en el node_modules de node-red, instalar también ```brew install libpcap``` o ```apt-get install libpcap-dev```)
+npm install git+https://git@github.com/labajo/node-red-contrib-pcap
 - node-red-contrib-splitter
 - node-red-contrib-telegrambot
 - node-red-dashboard
