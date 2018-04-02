@@ -57,9 +57,15 @@
 
 
 - Ejemplo gráficos Chronograf:
+
+
   - Gráfico de líneas:
+  
 ![FlowsEvol/Chronograf1.png](FlowsEvol/Chronograf1.png)
+
+
   - Gauge:
+  
 ![FlowsEvol/Chronograf2.png](FlowsEvol/Chronograf2.png)
 
 
