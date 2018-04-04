@@ -59,8 +59,10 @@ npm install git+https://git@github.com/labajo/node-red-contrib-pcap
 - Decoded pcap Object
 - Path: payload.shost
 
+## Proyecto lámpara:
+https://github.com/toblum/McLighting
 
-## Obtener estado de la lampara:
+## Obtener estado de la lámpara:
 - GET http://wemoslamp.local/get_switch
 
 ## Ejemplo información Sensor:
