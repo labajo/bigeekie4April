@@ -20,7 +20,7 @@
     - Ayuda a dispositivos ligeros al procesamiento.
     - Cacheo en caso de caída de red.
     - Multi interfaz.
-    - Conectividad desde el exterior.
+    - Proxy para comunicaciones desde exterior.
 
 - MQTT (Message Queuing Telemetry Transport) https://en.wikipedia.org/wiki/MQTT
   Publish/subscribe. Comunicación bidireccional fácil.
